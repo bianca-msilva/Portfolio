@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta tags Essenciais -->
+    <meta name ="author" content="Bianca Silva">
+    <meta name ="description" content="Portfólio de Bianca Silva, desenvolvedora Full Stack. Conheça meus projetos e entre em contato!">
+    <!-- Para fazer otimização da busca pelo index (1° página) e depois segue para as demais (subpáginas) -->
+    <meta name="robots" content="index, follow"> 
+    <!-- Ícone do lado do nome do site (URL) -->
+    <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg">
+
+    <title>Portfólio da Bianca</title>
+</head>
+<body>
+    <!-- Navbar - Menu -->
+    <!-- Duas classes para serem posteriormente configuradas -->
+    <header class="flex manu_container">
+        <!-- Parte interna do menu -->
+        <article class="menu_content">
+            <div id="titulo">
+                <!-- Para quando clicar, volte no início do site, "a" é para links -->
+                <a href="#">Portfólio</a>    
+            </div>
+
+            <!-- Barra de Navegador -->
+            <nav>
+                <ul class="flex menu_list">
+                    <!-- Para que parte vai passar, hero, primeira página/coisa que aparece no site -->
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </article>
+    </header>
+
+    <!-- Área Principal do Site -->
+    <main>
+        <section id="hero" class="hero_container">
+
+            <article class="hero_content">
+                <h4>👋 Olá, eu sou a Bianca</h4>
+                <h1>Desenvolvedora Full Stack</h1>
+                <p>Transformo Ideias em código e crio experiências digitais incríveis.</p>
+                <div class="hero_buttons">
+                    <!-- # faz "referência à" -->
+                    <a href="#contact" class="botao">Entre em contato</a>
+                    <!-- Botão sem preenchimento -->
+                    <a href="#about" class="botao-outline">Saiba mais...</a>
+                </div>
+            </article>
+            <figure class="hero_image">
+                <!-- Texto alternativo caso a imagem não esteja aparecendo - "alt=""" -->
+                <img 
+                    src="./assets/img/dev_woman.svg" 
+                    alt="Ilustração de uma desenvolvedora trabalhando em um laptop."
+                    class="ilustracao float-animation">
+            </figure>
+        </section>
+    
+        <section id="about" class="about_container">
+            <figure class="about_image">
+                <!-- Texto alternativo caso a imagem não esteja aparecendo - "alt=""" -->
+                <img 
+                    src="./assets/img/avatar_dev_woman.svg" 
+                    alt="Foto da pessoa desenvolvedora.">
+            </figure>
+
+            <article class="about_content">
+                <h2>Sobre mim</h2>
+                <p>Mussum Ipsum, cacilds vidis litro abertis.  Viva Forevis aptent taciti sociosqu ad litora torquent. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Quem manda na minha terra sou euzis! Morbi viverra placerat justo, vel pharetra turpis.</p>
+                <p>Mussum Ipsum, cacilds vidis litro abertis.  Viva Forevis aptent taciti sociosqu ad litora torquent. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Quem manda na minha terra sou euzis! Morbi viverra placerat justo, vel pharetra turpis.</p>
+            
+                <div class="about_stats">
+                    <!-- # pois trará direto do github posteriormente -->
+                    <!-- _blank - abrir numa nova aba -->
+                    <a href="#" target="_blank" class="botao">Ver GitHub</a>
+                    <div class="stat-item">
+                        <p class="stat-number">100</p> 
+                        <p class="stat-label">Seguidores</p>   
+                    </div>
+                    <div class="stat-item">
+                        <p class="stat-number">50</p> 
+                        <p class="stat-label">Repositórios</p>   
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="contact">
+            <article class="contact_info">
+                <h4>Entre em contato</h4>
+                <p>Sinta-se à vontade para entrar em contato comigo</p>
+                <div class="social_container">
+                    <a href="#" target="_blank" class="social_icon">
+                        <img 
+                            src="./assets/img/linkedin.svg"
+                            alt="Link para o LinkedIn"
+                        >
+                    </a>
+                        <a href="#" target="_blank" class="social_icon">
+                        <img 
+                            src="./assets/img/github.svg"
+                            alt="Link para o GitHub"
+                        >
+                    </a>
+                        <a href="#" target="_blank" class="social_icon">
+                        <img 
+                            src="./assets/img/instagram.svg"
+                            alt="Link para o Instagram"
+                        >
+                    </a>
+                </div>
+            </article>
+
+            <form id="formulario">
+                <!-- Título do input -->
+                <label for="nome">Nome</label>
+                <input id="nome" name="nome" type="text" placeholder="Digite o seu nome completo">
+                <!-- Para exibir mensagem de erro, embaixo do input -->
+                <span id="txtNome"></span>
+
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="text" placeholder="Digite o seu email">
+                <span id="txtEmail"></span>
+
+                <label for="assunto">Assunto</label>
+                <input id="assunto" name="assunto" type="text" placeholder="Digite o assunto">
+                <span id="txtAssunto"></span>
+
+                <!-- Caixa de texto maior, para mais texto -->
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Escreva a sua mensagem aqui..."></textarea>
+
+                <button class="botao" type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé do Site -->
+    <footer>
+        Feito com ❤️ por Bianca - 2025
+    </footer>
+</body>
+</html>
