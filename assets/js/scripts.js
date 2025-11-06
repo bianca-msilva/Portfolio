@@ -17,7 +17,7 @@ async function getApiGithub(){
             <!-- FOTO DO PERFIL -->
             <figure class="about_image">
                 <img
-                    src="${perfilJson.avatar_url}"
+                    src="./assets/img/fotoBianca.jpeg"
                     alt="Foto do perfil do GitHub - ${perfilJson.name}."
                 >
             </figure>
@@ -26,10 +26,10 @@ async function getApiGithub(){
             <article class="about_content">
  
                 <h2>Sobre mim</h2>
-                <p>Mussum Ipsum, cacilds vidis litro abertis.  Não sou faixa preta cumpadi, sou preto inteiris, inteiris. Per aumento de cachacis, eu reclamis. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Nulla id gravida magna, ut semper sapien.</p>
-                <p>Mussum Ipsum, cacilds vidis litro abertis.  Não sou faixa preta cumpadi, sou preto inteiris, inteiris. Per aumento de cachacis, eu reclamis. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Nulla id gravida magna, ut semper sapien.</p>
+                <p>Sou desenvolvedora full stack apaixonada por transformar ideias em soluções digitais completas. Com domínio de tecnologias front-end e back-end, crio aplicações modernas, escaláveis e centradas na experiência do usuário. Gosto de unir design intuitivo com código limpo, entregando projetos que funcionam bem e encantam visualmente.</p>
+                <p>Tenho experiência em frameworks como React, Node.js e bancos de dados relacionais, além de boas práticas de versionamento, testes e deploy. Cada projeto é uma oportunidade de inovar, aprender e superar expectativas.</p>
  
-                <div class="about_stats">
+                <div id = "button" class="about_stats">
                     <a href="${perfilJson.html_url}" target="_blank" class="botao">Ver GitHub</a>
                    
                     <!-- Faltou esta div para alinhar os cards -->

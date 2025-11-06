@@ -24,6 +24,16 @@
     --purple-700: #4c2177; 
     --purple-800: #441f88; 
     --purple-900: #2a0e4d; 
+    --prussian-blue: #012a4aff;
+    --indigo-dye: #013a63ff;
+    --indigo-dye-2: #01497cff;
+    --indigo-dye-3: #014f86ff;
+    --ucla-blue: #2a6f97ff;
+    --cerulean: #2c7da0ff;
+    --air-force-blue: #468fafff;
+    --air-superiority-blue: #61a5c2ff;
+    --sky-blue: #89c2d9ff;
+    --light-blue: rgb(228, 243, 248);
     --gray-100: #f5f5f5;
     --gray-200: #e8e8e8;
     --gray-400: #505861;
@@ -110,6 +120,7 @@ a, button{
     background-color: var(--purple-800);
     border-bottom: 0.5rem solid var(--gray-200);
     box-shadow: var(--shadow-sm);
+    background: linear-gradient(to bottom, var(--indigo-dye-3), var(--ucla-blue), var(--air-force-blue));
     z-index: 1000; /* Mantê-la sempre acima de todas outras */
 }
 
@@ -221,7 +232,7 @@ a, button{
     display: flex;
     align-items: center;
     gap: 4rem;
-    background-color: var(--gray-200);
+    background-color: var(--light-blue);
     border-radius: 2.25rem;
 }
 
@@ -231,13 +242,13 @@ a, button{
 
 .about_image img{
     width: 100%;
-    border: 0.20rem solid var(--purple-500);
-    border-radius: 50%;
+    border: 0.20rem solid var(--indigo-dye-2);
+    border-radius: 15%;
 }
 
 .about_content h2{
     font-size: 2.5rem;
-    color: var(--purple-600);
+    color: var(--indigo-dye-2);
     font-weight: 700;
     margin-bottom: 1rem;
 }
@@ -277,7 +288,7 @@ a, button{
     font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
-    color: var(--purple-500);
+    color: var(--indigo-dye-3);
     margin-bottom: 0;
 }
 
