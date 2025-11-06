@@ -63,7 +63,7 @@ a, button{
     cursor: pointer;
 }
 
-/* Botões (classes), mais gerais para ambos */
+/* Botões (classes) */
 .botao,
 .botao-outline{
     padding: 0.75rem 2rem;
@@ -71,21 +71,19 @@ a, button{
     font-size: 1rem;
     font-weight: 600; /* O quanto será negritada */ 
     text-align: center;
-    transition: all 0.3s ease; /* Transição de cores no botão, ease é de forma mais tranquila */
+    transition: all 0.3s ease; /* Transiçaõ de cores no botão */
 }
 
-/* Mais específicos do botão colorido */
 .botao{
     border: none;
     color: var(--white);
     background-color: var(--purple-500);
 }
 
-/* Pseudoclasse para quando há efeitos */
 .botao:hover{
     background-color: var(--purple-800);
     box-shadow: var(--shadow-md);
-    transform: translateY(0.25rem) /* Para o botão mexer quando passar em cima */
+    transform: translateY(0.25rem)
 }
 
 .botao-outline{
@@ -98,14 +96,14 @@ a, button{
     background-color: var(--purple-500);
     color: var(--white);
     box-shadow: var(--shadow-md);
-    transform: translateY(0.25rem) /* Negativo vai para cima e positivo vai para baixo */
+    transform: translateY(0.25rem)
 }
 
 /* Menu */
 .menu_container{
-    position: sticky; /* Deixá-lo fixo */
-    top: 0; /* Deixá-lo fixo no topo */ 
-    width: 100%; /* Ocupação da área disponível */
+    position: sticky;
+    top: 0;
+    width: 100%;
     height: 5rem;
     background-color: var(--purple-800);
     border-bottom: 0.5rem solid var(--gray-200);
