@@ -63,7 +63,7 @@ a, button{
     cursor: pointer;
 }
 
-/* Botões (classes) */
+/* Botões (classes), mais gerais para ambos */
 .botao,
 .botao-outline{
     padding: 0.75rem 2rem;
@@ -71,23 +71,25 @@ a, button{
     font-size: 1rem;
     font-weight: 600; /* O quanto será negritada */ 
     text-align: center;
-    transition: all 0.3s ease; /* Transiçaõ de cores no botão */
+    transition: all 0.3s ease; /* Transição de cores no botão, ease é de forma mais tranquila */
 }
 
+/* Mais específicos do botão colorido */
 .botao{
     border: none;
     color: var(--white);
     background-color: var(--purple-500);
 }
 
+/* Pseudoclasse para quando há efeitos */
 .botao:hover{
     background-color: var(--purple-800);
     box-shadow: var(--shadow-md);
-    transform: translateY(0.25rem)
+    transform: translateY(0.25rem) /* Para o botão mexer quando passar em cima */
 }
 
 .botao-outline{
-    border: 0.25rem solid var(--purple-500);
+    border: 0.20rem solid var(--purple-500);
     color: var(--purple-500);
     background-color: transparent;
 }
@@ -96,14 +98,14 @@ a, button{
     background-color: var(--purple-500);
     color: var(--white);
     box-shadow: var(--shadow-md);
-    transform: translateY(0.25rem)
+    transform: translateY(0.25rem) /* Negativo vai para cima e positivo vai para baixo */
 }
 
 /* Menu */
 .menu_container{
-    position: sticky;
-    top: 0;
-    width: 100%;
+    position: sticky; /* Deixá-lo fixo */
+    top: 0; /* Deixá-lo fixo no topo */ 
+    width: 100%; /* Ocupação da área disponível */
     height: 5rem;
     background-color: var(--purple-800);
     border-bottom: 0.5rem solid var(--gray-200);
@@ -161,6 +163,46 @@ a, button{
 
 /* Seção Hero */
 
+.hero_container {
+    min-height: calc(100vh - 5rem);
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.hero_content{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hero_content h4{
+    color: var(--purple-600);
+    font-weight: 650;
+    font-size: 1.30rem;
+}
+
+.hero_content h1{
+    color: var(--black-800);
+    font-weight: 700;
+    font-size: 2.50rem;
+    line-height: 2.95rem;
+}
+
+.hero_content p{
+    color: var(--gray-400);
+    font-weight: 575;
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+
+.hero_buttons{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
 .hero_image{
     flex: 1;
     display: flex;
@@ -174,3 +216,76 @@ a, button{
     border-radius: 2rem;
 }
 
+.about_container{
+    margin: 4rem auto;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    background-color: var(--gray-200);
+    border-radius: 2.25rem;
+}
+
+.about_image{
+    flex: 0 0 17rem;
+}
+
+.about_image img{
+    width: 100%;
+    border: 0.20rem solid var(--purple-500);
+    border-radius: 50%;
+}
+
+.about_content h2{
+    font-size: 2.5rem;
+    color: var(--purple-600);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.about_content p{
+    font-size: 1rem;
+    color: var(--gray-400);
+    font-weight: 570;
+    line-height: 1.75rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.about_stats {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.about_stats .botao {
+    margin-right: auto;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stats-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.stats-wrapper .stat-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--purple-500);
+    margin-bottom: 0;
+}
+
+.stats-wrapper .stat-label {
+    font-size: 0.75rem;
+    color: var(--gray-400);
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* Seção de Contato */
