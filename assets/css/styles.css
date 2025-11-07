@@ -175,7 +175,7 @@ a, button{
 /* Seção Hero */
 
 .hero_container {
-    min-height: calc(100vh - 5rem);
+    min-height: calc(100vh - 5rem); /* cálculo mínimo é o tamanho total da tela - 5rem, para dar um espaço de respiro no topo */
     display: flex;
     align-items: center;
     gap: 4rem;
@@ -214,6 +214,7 @@ a, button{
     margin-top: 1rem;
 }
 
+/* Caixa onde está a imagem */
 .hero_image{
     flex: 1;
     display: flex;
@@ -221,12 +222,36 @@ a, button{
     align-items: center;
 }
 
+/* É a própria imagem */
 .ilustracao{
     width: 100%;
     max-width: 100%;
     border-radius: 2rem;
 }
 
+/* Animação que se chama 'float' - Especifica qual animação você deseja */
+@keyframes float{
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    /* Quando chegar à metade do tempo, quanto movimentará */
+    50%{
+        transform: translateY(-1.25rem);
+    }
+}
+
+/* Sem isso a animação não acontece na imagem, lembrando que 'float-animation' é a classe criada na imagem */
+.float-animation{
+    /* Para que a movimentação seja suave: ease-in-out e que a animação ocorra infinitamente */
+    /* nome tempo como tempo */
+    animation: float 3s ease-in-out infinite; /* Propriedade animation */
+    /* float é a ação especificada anteriormente */
+}
+
+/* Seção About */
 .about_container{
     margin: 4rem auto;
     display: flex;
@@ -236,6 +261,7 @@ a, button{
     border-radius: 2.25rem;
 }
 
+/* Container da imagem */
 .about_image{
     flex: 0 0 17rem;
 }
@@ -244,6 +270,7 @@ a, button{
     width: 100%;
     border: 0.20rem solid var(--indigo-dye-2);
     border-radius: 50%;
+    box-shadow: var(--shadow-lg);
 }
 
 .about_content h2{
@@ -300,3 +327,96 @@ a, button{
 }
 
 /* Seção de Contato */
+
+.contact_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 4rem auto 2rem;
+    gap: 4rem;
+}
+
+.contact_info h4{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--purple-500);
+}
+
+.contact_info p{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: var(--gray-400);
+    margin-bottom: 2rem;
+}
+
+.social_container{
+    display: flex;
+    gap: 3rem;
+}
+
+.social_icon{
+    width: 4rem;
+    height: 4rem;
+    padding: 0.75rem;
+    background-color: var(--gray-100);
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.social_icon:hover{
+    background-color: var(--purple-600);
+    transform: translateY(-0.25rem);
+    box-shadow: var(--shadow-md);
+}
+
+.social_icon img{
+    width: 100%;
+    filter: brightness(0) saturate(100%);
+}
+
+.social_icon:hover img{
+    filter: brightness(0) invert(100%);
+}
+
+/* Seção do Formulário */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+form label{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--black-800);
+}
+
+form input,
+textarea{
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    border: 0.25rem solid var(--gray-200);
+    font-size: 1rem;
+    background-color: var(--white);
+    transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus{
+    border-color: var(--purple-500);
+    box-shadow: var(--shadow-focus);
+}
+
+form textarea{
+    resize: vertical;
+    min-height: 7rem;
+}
+
+form span{
+    font-size: 0.75rem;
+    color: var(--error);
+    margin-top: -0.75rem;
+    font-weight: 500;
+}
