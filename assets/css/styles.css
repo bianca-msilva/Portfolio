@@ -79,7 +79,7 @@ a, button{
     padding: 0.75rem 2rem;
     border-radius: 0.5rem; /* Arredondamento */
     font-size: 1rem;
-    font-weight: 600; /* O quanto será negritada */ 
+    font-weight: 500; /* O quanto será negritada */ 
     text-align: center;
     transition: all 0.3s ease; /* Transição de cores no botão, ease é de forma mais tranquila */
 }
@@ -117,7 +117,6 @@ a, button{
     top: 0; /* Deixá-lo fixo no topo */ 
     width: 100%; /* Ocupação da área disponível */
     height: 5rem;
-    background-color: var(--purple-800);
     border-bottom: 0.5rem solid var(--gray-200);
     box-shadow: var(--shadow-sm);
     background: linear-gradient(to bottom, var(--indigo-dye-3), var(--ucla-blue), var(--air-force-blue));
@@ -182,8 +181,8 @@ a, button{
 }
 
 .hero_content{
-    display: flex;
     flex: 1;
+    display: flex;
     flex-direction: column;
     gap: 1rem;
 }
@@ -421,7 +420,7 @@ form span{
     font-weight: 500;
 }
 
-/* Página Success */
+/* Página Sucess */
 .sucess_container {
     display: flex;
     flex-direction: column;
@@ -444,7 +443,7 @@ form span{
 .sucess_icon {
     width: 7.5rem;
     height: 7.5rem;
-    background-color: var(--purple-100);
+    background-color: rgb(108, 106, 212);
     border-radius: 50%;
     display: flex;
     align-items: center;
